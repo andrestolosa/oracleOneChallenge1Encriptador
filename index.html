@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/izquierda.css">
+    <link rel="stylesheet" href="assets/css/derecha.css">
+    <link rel="stylesheet" href="assets/css/responsivo.css">
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+    <header>
+        <img src="assets/img/logo.svg" alt="logo Alura" class="logo" title="Logo de Alura">
+    </header>
+    <div class="container">
+        <div class="izquierda">
+            <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Ingrese su texto" autofocus></textarea>
+            <p class="alerta">&#9432; Solo letras minúsculas y sin acento.</p>
+            <div class="boton-div">
+                <button class="boton" id="encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="boton" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="derecha">
+            <div id="div-inicial">
+                <img src="assets/img/fondo.svg" id="fondo">
+                <p id="aviso-derecha">Ningún mensaje fue encontrado</p>
+                <p  id="sub-aviso">Ingrese el texto que desea <br> encriptar o desencriptar</p>
+            </div>
+            <div id="resultado">
+                <textarea name="valor" cols="30" rows="10" id="valor"></textarea>
+                <button class="boton-copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/encriptar.js"></script>
+    <script src="assets/js/desencriptar.js"></script>
+    <script src="assets/js/boton-copiar.js"></script>
+</body>
+</html>
